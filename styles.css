@@ -38,11 +38,8 @@ body {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background:
-    radial-gradient(circle at 50% 37%, rgba(4, 12, 25, 0.08), rgba(0, 0, 0, 0.42) 66%, rgba(0, 0, 0, 0.82) 100%),
-    url("background.png") center / cover no-repeat;
+  background: url("background.png") center / cover no-repeat;
 }
-
 .background::after {
   content: "";
   position: absolute;
