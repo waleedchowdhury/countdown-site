@@ -79,6 +79,7 @@ body {
 
 .est-mark {
   top: 26.26%;
+  left: 58%;
   width: 35.83%;
   max-width: 640px;
 }
@@ -148,6 +149,7 @@ body {
 
   .est-mark {
     top: 28%;
+    left: 60%;
     width: min(72vw, 460px);
   }
 
