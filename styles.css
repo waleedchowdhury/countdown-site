@@ -59,9 +59,7 @@ body {
   min-height: 100svh;
 }
 
-.brand-mark,
-.chapter-mark,
-.est-mark {
+.brand-mark {
   position: absolute;
   left: 50%;
   display: block;
@@ -77,17 +75,33 @@ body {
   max-width: 520px;
 }
 
+.est-mark,
+.chapter-mark {
+  position: absolute;
+  left: 50%;
+  margin: 0;
+  color: #f7e7ce;
+  font-family: "Bodoni 72", Didot, "Bodoni MT", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 8px 26px var(--shadow);
+  text-rendering: geometricPrecision;
+  transform: translateX(-50%);
+  user-select: none;
+  white-space: nowrap;
+}
+
 .est-mark {
   top: 26.26%;
-  left: 58%;
-  width: 35.83%;
-  max-width: 640px;
+  left: 60%;
+  font-size: clamp(0.78rem, calc(var(--design-width) * 0.014), 1.42rem);
 }
 
 .chapter-mark {
   top: 34.52%;
-  width: 37.14%;
-  max-width: 650px;
+  font-size: clamp(1.25rem, calc(var(--design-width) * 0.025), 2.85rem);
 }
 
 .countdown {
@@ -149,13 +163,13 @@ body {
 
   .est-mark {
     top: 28%;
-    left: 60%;
-    width: min(72vw, 460px);
+    left: 64%;
+    font-size: clamp(0.76rem, 4vw, 1.18rem);
   }
 
   .chapter-mark {
     top: 35%;
-    width: min(82vw, 510px);
+    font-size: clamp(1.24rem, 6.2vw, 2rem);
   }
 
   .countdown {
