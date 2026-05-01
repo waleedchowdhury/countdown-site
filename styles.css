@@ -158,24 +158,25 @@ body {
 
   .countdown {
     top: 52%;
-    width: min(86vw, 440px);
+    width: min(94vw, 520px);
     min-width: 0;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .time-cell {
-    min-height: 104px;
+    min-height: 82px;
+    padding: 12px 4px 10px;
   }
 
 }
 
 @media (max-width: 390px) {
   .time-value {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
   }
 
   .time-cell {
-    min-height: 96px;
-    padding-inline: 6px;
+    min-height: 76px;
+    padding-inline: 3px;
   }
 }
