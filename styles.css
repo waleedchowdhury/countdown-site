@@ -82,8 +82,8 @@ body {
   margin: 0;
   color: #f7e7ce;
   font-family: "Bodoni 72", Didot, "Bodoni MT", "Times New Roman", serif;
-  font-style: italic;
   font-weight: 400;
+  letter-spacing: 0;
   line-height: 1;
   text-align: center;
   text-shadow: 0 8px 26px var(--shadow);
@@ -94,14 +94,14 @@ body {
 }
 
 .est-mark {
-  top: 26.26%;
+  top: 30.5%;
   left: 60%;
-  font-size: clamp(0.78rem, calc(var(--design-width) * 0.014), 1.42rem);
+  font-size: clamp(0.68rem, calc(var(--design-width) * 0.011), 1.12rem);
 }
 
 .chapter-mark {
-  top: 34.52%;
-  font-size: clamp(1.25rem, calc(var(--design-width) * 0.025), 2.85rem);
+  top: 37%;
+  font-size: clamp(1.08rem, calc(var(--design-width) * 0.021), 2.35rem);
 }
 
 .countdown {
@@ -162,14 +162,14 @@ body {
   }
 
   .est-mark {
-    top: 28%;
-    left: 64%;
-    font-size: clamp(0.76rem, 4vw, 1.18rem);
+    top: 26.2%;
+    left: 62%;
+    font-size: clamp(0.66rem, 3.2vw, 0.92rem);
   }
 
   .chapter-mark {
-    top: 35%;
-    font-size: clamp(1.24rem, 6.2vw, 2rem);
+    top: 32.6%;
+    font-size: clamp(1.02rem, 5.4vw, 1.72rem);
   }
 
   .countdown {
