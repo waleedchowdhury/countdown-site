@@ -59,20 +59,21 @@ body {
   min-height: 100svh;
 }
 
-.brand-mark {
+.brand-lockup {
   position: absolute;
+  top: 14.03%;
   left: 50%;
-  display: block;
-  height: auto;
+  width: 29.8%;
+  max-width: 520px;
   transform: translateX(-50%);
-  filter: drop-shadow(0 8px 26px var(--shadow));
-  user-select: none;
 }
 
 .brand-mark {
-  top: 14.03%;
-  width: 29.8%;
-  max-width: 520px;
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 8px 26px var(--shadow));
+  user-select: none;
 }
 
 .est-mark,
@@ -94,9 +95,10 @@ body {
 }
 
 .est-mark {
-  top: 30.5%;
-  left: 60%;
-  font-size: clamp(0.68rem, calc(var(--design-width) * 0.011), 1.12rem);
+  top: 70%;
+  left: 73%;
+  font-size: clamp(0.54rem, calc(var(--design-width) * 0.0068), 0.84rem);
+  transform: translate(-50%, -50%);
 }
 
 .chapter-mark {
@@ -156,15 +158,15 @@ body {
     min-height: 620px;
   }
 
-  .brand-mark {
+  .brand-lockup {
     top: 12%;
     width: min(78vw, 430px);
   }
 
   .est-mark {
-    top: 26.2%;
-    left: 62%;
-    font-size: clamp(0.66rem, 3.2vw, 0.92rem);
+    top: 70%;
+    left: 73%;
+    font-size: clamp(0.58rem, 2.2vw, 0.84rem);
   }
 
   .chapter-mark {
