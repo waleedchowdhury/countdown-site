@@ -104,7 +104,7 @@ body {
 
 .chapter-mark {
   top: 45%;
-  font-family: "Waverly CF", "Bodoni 72", Didot, "Bodoni MT", Georgia, serif;
+  font-family: "Nicholas", "Bodoni 72", Didot, "Bodoni MT", Georgia, serif;
   font-size: clamp(1rem, calc(var(--design-width) * 0.018), 2.05rem);
   font-weight: 600;
 }
