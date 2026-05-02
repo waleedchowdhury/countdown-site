@@ -110,38 +110,60 @@ body {
 }
 
 .countdown {
+  --countdown-gap: clamp(34px, calc(var(--design-width) * 0.034), 70px);
+  --countdown-number-size: clamp(3.4rem, calc(var(--design-width) * 0.048), 5.25rem);
+
   position: absolute;
   top: 52%;
   left: 50%;
   display: grid;
-  width: min(56%, 760px);
-  min-width: 560px;
+  width: min(64%, 920px);
+  min-width: 640px;
+  column-gap: var(--countdown-gap);
   grid-template-columns: repeat(4, minmax(0, 1fr));
   transform: translateX(-50%);
-  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.62);
 }
 
 .time-cell {
+  position: relative;
   display: grid;
+  align-content: start;
+  justify-items: center;
   min-width: 0;
-  min-height: clamp(92px, calc(var(--design-height) * 0.145), 132px);
-  place-items: center;
-  padding: 18px 10px 16px;
+  min-height: clamp(110px, calc(var(--design-height) * 0.15), 148px);
+  padding: 0;
+  row-gap: 18px;
+}
+
+.time-cell:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  top: 0;
+  right: calc(var(--countdown-gap) / -2);
+  color: #f5f5f3;
+  font-family: "Playfair Display", Didot, "Bodoni Moda", "Bodoni 72", Georgia, serif;
+  font-size: var(--countdown-number-size);
+  font-weight: 300;
+  line-height: 0.92;
+  transform: translateX(50%);
 }
 
 .time-value {
-  font-size: clamp(2.35rem, calc(var(--design-width) * 0.039), 4rem);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1;
+  color: #f5f5f3;
+  font-family: "Playfair Display", Didot, "Bodoni Moda", "Bodoni 72", Georgia, serif;
+  font-size: var(--countdown-number-size);
+  font-weight: 300;
+  line-height: 0.92;
 }
 
 .time-label {
-  color: var(--muted-ivory);
-  font-size: clamp(0.72rem, calc(var(--design-width) * 0.0105), 1rem);
-  font-style: italic;
-  line-height: 1;
-  text-transform: lowercase;
+  color: #f5f5f3;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(0.52rem, calc(var(--design-width) * 0.0062), 0.72rem);
+  font-weight: 400;
+  letter-spacing: 0.24em;
+  line-height: 1.1;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -178,6 +200,9 @@ body {
   }
 
   .countdown {
+    --countdown-gap: clamp(8px, 2.7vw, 18px);
+    --countdown-number-size: clamp(1.65rem, 8vw, 2.75rem);
+
     top: 52%;
     width: min(94vw, 520px);
     min-width: 0;
@@ -185,19 +210,24 @@ body {
   }
 
   .time-cell {
-    min-height: 82px;
-    padding: 12px 4px 10px;
+    min-height: 74px;
+    row-gap: 10px;
+  }
+
+  .time-label {
+    font-size: clamp(0.42rem, 1.9vw, 0.58rem);
+    letter-spacing: 0.16em;
   }
 
 }
 
 @media (max-width: 390px) {
-  .time-value {
-    font-size: 1.9rem;
+  .countdown {
+    --countdown-gap: 7px;
+    --countdown-number-size: 1.85rem;
   }
 
   .time-cell {
-    min-height: 76px;
-    padding-inline: 3px;
+    min-height: 68px;
   }
 }
